@@ -1,0 +1,13 @@
+<div class="right-side">
+    <div class="pill-group">
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <app-tarjeta-producto 
+        *ngFor="let producto of productos" 
+        [producto]="producto" 
+        (agregar)="agregarAlCarrito(producto)">
+    </app-tarjeta-producto>
+</div>
+
+</div>
+</div>

@@ -1,0 +1,6 @@
+<div class="p-4 bg-white rounded-lg shadow-md">
+    <img [src]="producto.image" alt="{{ producto.title }}" class="w-full h-auto">
+    <h2 class="text-lg font-bold">{{ producto.title }}</h2>
+    <p class="text-gray-600">{{ producto.description | shortDescription }}</p>
+    <button (click)="onAgregar()" class="mt-2 bg-blue-500 text-white p-2 rounded">Agregar al Carrito</button>
+</div>

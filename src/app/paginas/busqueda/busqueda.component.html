@@ -1,0 +1,16 @@
+
+<div class="right-side">
+    <div class="pill-group">
+
+<form [formGroup]="formularioBusqueda" (ngSubmit)="buscar()">
+    <input formControlName="busqueda" placeholder="Buscar productos..." />
+    <button type="submit">Buscar</button>
+    <div *ngIf="formularioBusqueda.invalid && formularioBusqueda.touched">
+        <small *ngIf="formularioBusqueda.get('busqueda')?.errors?.['required']">Campo requerido.</small>
+        <small *ngIf="formularioBusqueda.get('busqueda')?.errors?.['minlength']">Mínimo 3 caracteres.</small>
+    </div>
+ </form> 
+
+
+</div>
+</div>

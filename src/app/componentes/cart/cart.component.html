@@ -1,0 +1,11 @@
+<div class="right-side">
+    <div class="pill-group">
+        
+<div *ngFor="let product of (cartProducts$ | async)">
+    <h2>{{ product.title }}</h2>
+    <p>Precio: {{ product.price }}</p>
+    <button (click)="removeFromCart(product.id)">Eliminar</button>
+ </div>
+
+</div>
+</div>

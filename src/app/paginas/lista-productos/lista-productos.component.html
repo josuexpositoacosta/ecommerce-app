@@ -1,0 +1,14 @@
+<div class="right-side">
+    <div class="pill-group">
+
+        <div *ngFor="let product of productsWithDetails">
+            <h2>{{ product.title }}</h2>
+            <p>-------------------------------------------------------</p>
+            <p>Precio: {{ product.price }}</p>
+            <p>Categoría: {{ product.category }}</p>
+            <p>Detalles adicionales: {{ product.detail.description }}</p>
+            <p>-------------------------------------------------------</p>
+        </div>
+
+</div>
+</div>
